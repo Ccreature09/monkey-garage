@@ -176,12 +176,12 @@ export default function Navbar({
       if (systemTheme === "light") {
         setLogo("https://i.ibb.co/CbVSvTp/image.png");
       } else {
-        setLogo("https://i.ibb.co/wJ5PVXg/image-removebg-preview-3.png");
+        setLogo("https://i.ibb.co/CbVSvTp/image.png");
       }
     } else if (theme === "light") {
       setLogo("https://i.ibb.co/CbVSvTp/image.png");
     } else if (theme === "dark") {
-      setLogo("https://i.ibb.co/wJ5PVXg/image-removebg-preview-3.png");
+      setLogo("https://i.ibb.co/CbVSvTp/image.png");
     }
   }, [theme]);
 
@@ -390,15 +390,15 @@ export default function Navbar({
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Компоненти</NavigationMenuTrigger>
-              <NavigationMenuContent className="">
-                <div className="w-[1000px] flex">
-                  <div className="">
+              <NavigationMenuContent>
+                <div className="flex">
+                  <div>
                     <p
                       className={`p-4 hover:bg-orange-900 ${
                         category == "Скоростни системи"
                           ? "bg-orange-900 text-white"
                           : "bg-white text-black"
-                      } hover:text-white duration-200 flex relative pr-16 transition-all`}
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
                       onMouseEnter={() => setCategory("Скоростни системи")}
                     >
                       Скоростни системи
@@ -425,7 +425,7 @@ export default function Navbar({
                         category == "Седалки и колчета"
                           ? "bg-orange-900 text-white"
                           : "bg-white text-black"
-                      } hover:text-white duration-200 flex relative pr-16 transition-all`}
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
                       onMouseEnter={() => setCategory("Седалки и колчета")}
                     >
                       Седалки и колчета
@@ -451,7 +451,7 @@ export default function Navbar({
                         category == "Курбели и педали"
                           ? "bg-orange-900 text-white"
                           : "bg-white text-black"
-                      } hover:text-white duration-200 flex relative pr-16 transition-all`}
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
                       onMouseEnter={() => setCategory("Курбели и педали")}
                     >
                       Курбели и педали
@@ -477,7 +477,7 @@ export default function Navbar({
                         category == "Кормила, лапи, грипове"
                           ? "bg-orange-900 text-white"
                           : "bg-white text-black"
-                      } hover:text-white duration-200 flex relative pr-16 transition-all`}
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
                       onMouseEnter={() => setCategory("Кормила, лапи, грипове")}
                     >
                       Кормила, лапи, грипове
@@ -503,7 +503,7 @@ export default function Navbar({
                         category == "Спирачни системи"
                           ? "bg-orange-900 text-white"
                           : "bg-white text-black"
-                      } hover:text-white duration-200 flex relative pr-16 transition-all`}
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
                       onMouseEnter={() => setCategory("Спирачни системи")}
                     >
                       Спирачни системи
@@ -529,7 +529,7 @@ export default function Navbar({
                         category == "Рамки, окачване"
                           ? "bg-orange-900 text-white"
                           : "bg-white text-black"
-                      } hover:text-white duration-200 flex relative pr-16 transition-all`}
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
                       onMouseEnter={() => setCategory("Рамки, окачване")}
                     >
                       Рамки, окачване
@@ -555,77 +555,337 @@ export default function Navbar({
                   <div className="mx-5 p-5 text-xl ">
                     {category === "Скоростни системи" ? (
                       <>
-                        <p className="my-2">Задни Дерайльори</p>
+                        <Link href={`/categories/${category}/Задни Дерайльори`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Задни Дерайльори
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Предни Декланшори</p>
+                        <Link
+                          href={`/categories/${category}/Предни Декланшори`}
+                        >
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Предни Декланшори
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Задни Венци</p>
+                        <Link href={`/categories/${category}/Задни Венци`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Задни Венци
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Вериги</p>
+                        <Link href={`/categories/${category}/Вериги`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Вериги
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Команди</p>
+                        <Link href={`/categories/${category}/Команди`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Команди
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Groupsets / групи компоненти</p>
+                        <Link href={`/categories/${category}/Groupsets`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Groupsets / групи компоненти
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Single Speed / Единична скорост</p>
+                        <Link href={`/categories/${category}/Single Speed`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Single Speed / Единична скорост
+                          </p>
+                        </Link>
                       </>
                     ) : category === "Седалки и колчета" ? (
                       <>
-                        <p className="my-2">Седалки</p>
+                        <Link href={`/categories/${category}/Седалки`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Седалки
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Колчета</p>
+                        <Link href={`/categories/${category}/Колчета`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Колчета
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Скоби</p>
+                        <Link href={`/categories/${category}/Скоби`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Скоби
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Дропър колчета</p>
+                        <Link href={`/categories/${category}/Дропър колчета`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Дропър колчета
+                          </p>
+                        </Link>
                       </>
                     ) : category === "Курбели и педали" ? (
                       <>
-                        <p className="my-2">Педали</p>
+                        <Link href={`/categories/${category}/Педали`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Педали
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Курбели</p>
+                        <Link href={`/categories/${category}/Курбели`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Курбели
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Средни движения</p>
+                        <Link href={`/categories/${category}/Средни движения`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Средни движения
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Водачи</p>
+                        <Link href={`/categories/${category}/Водачи`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Водачи
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Плочи</p>
+                        <Link href={`/categories/${category}/Плочи`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Плочи
+                          </p>
+                        </Link>
                       </>
                     ) : category === "Кормила, лапи, грипове" ? (
                       <>
-                        <p className="my-2">Кормила</p>
+                        <Link href={`/categories/${category}/Кормила`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Кормила
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Лапи</p>
+                        <Link href={`/categories/${category}/Лапи`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Лапи
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Грипове</p>
+                        <Link href={`/categories/${category}/Грипове`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Грипове
+                          </p>
+                        </Link>
                       </>
                     ) : category === "Спирачни системи" ? (
                       <>
-                        <p className="my-2">Хидравлични спирачки</p>
+                        <Link
+                          href={`/categories/${category}/Хидравлични спирачки`}
+                        >
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Хидравлични спирачки
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Ротори</p>
+                        <Link href={`/categories/${category}/Ротори`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Ротори
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Накладки за дискови спирачки</p>
+                        <Link
+                          href={`/categories/${category}/Накладки за дискови спирачки`}
+                        >
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Накладки за дискови спирачки
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Преходници</p>
+                        <Link href={`/categories/${category}/Преходници`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Преходници
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">Механични дискови спирачки</p>
+                        <Link
+                          href={`/categories/${category}/Механични дискови спирачки`}
+                        >
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Механични дискови спирачки
+                          </p>
+                        </Link>
                         <Separator />
-                        <p className="my-2">
-                          Лостчета за спирачки - хидравлични и Механични
-                        </p>
+                        <Link
+                          href={`/categories/${category}/Лостчета за спирачки - хидравлични и Механични`}
+                        >
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            Лостчета за спирачки - хидравлични и Механични
+                          </p>
+                        </Link>
                       </>
                     ) : (
-                      category === "Рамки, окачване" && <></>
+                      category === "Рамки, окачване" && (
+                        <>
+                          <Link href={`/categories/${category}/Рамки`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              Рамки
+                            </p>
+                          </Link>
+                          <Separator />
+                          <Link href={`/categories/${category}/Вилки`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              Вилки
+                            </p>
+                          </Link>
+                          <Separator />
+                          <Link href={`/categories/${category}/Шокове`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              Шокове
+                            </p>
+                          </Link>
+                          <Separator />
+                          <Link href={`/categories/${category}/Уши`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              Уши
+                            </p>
+                          </Link>
+                          <Separator />
+                          <Link href={`/categories/${category}/Резервни части`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              Резервни части
+                            </p>
+                          </Link>
+                        </>
+                      )
                     )}
                   </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <NavigationMenuTrigger>Капли / Гуми</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="flex">
+                  <div>
+                    <p
+                      className={`p-4 hover:bg-orange-900 ${
+                        category == "Капли"
+                          ? "bg-orange-900 text-white"
+                          : "bg-white text-black"
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
+                      onMouseEnter={() => setCategory("Капли")}
+                    >
+                      Капли
+                      <svg
+                        data-testid="geist-icon"
+                        fill="none"
+                        height="24"
+                        shape-rendering="geometricPrecision"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        className="absolute right-4 text-red-500"
+                      >
+                        <path d="M13 17l5-5-5-5" />
+                        <path d="M6 17l5-5-5-5" />
+                      </svg>
+                    </p>
+
+                    <p
+                      className={`p-4 hover:bg-orange-900 ${
+                        category == "Гуми"
+                          ? "bg-orange-900 text-white"
+                          : "bg-white text-black"
+                      } hover:text-white duration-200 flex relative pr-32 transition-all`}
+                      onMouseEnter={() => setCategory("Гуми")}
+                    >
+                      Гуми
+                      <svg
+                        data-testid="geist-icon"
+                        fill="none"
+                        height="24"
+                        shape-rendering="geometricPrecision"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        className="absolute right-4 text-red-500"
+                      >
+                        <path d="M13 17l5-5-5-5" />
+                        <path d="M6 17l5-5-5-5" />
+                      </svg>
+                    </p>
+                  </div>
+
+                  <div className="mx-5 p-5 text-xl ">
+                    {category === "Капли" ? (
+                      <>
+                        <Link href={`/categories/${category}/26`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            &quot;26&quot;
+                          </p>
+                        </Link>
+                        <Separator />
+                        <Link href={`/categories/${category}/27.5`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            &quot;27.5&quot;
+                          </p>
+                        </Link>
+                        <Separator />
+                        <Link href={`/categories/${category}/28`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            &quot;28&quot;
+                          </p>
+                        </Link>
+                        <Separator />
+                        <Link href={`/categories/${category}/29`}>
+                          <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                            &quot;29&quot;
+                          </p>
+                        </Link>
+                      </>
+                    ) : (
+                      category === "Гуми" && (
+                        <>
+                          <Link href={`/categories/${category}/26`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              &quot;26&quot;
+                            </p>
+                          </Link>
+                          <Separator />
+                          <Link href={`/categories/${category}/27.5`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              &quot;27.5&quot;
+                            </p>
+                          </Link>
+                          <Separator />
+                          <Link href={`/categories/${category}/28`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              &quot;28&quot;
+                            </p>
+                          </Link>
+                          <Separator />
+                          <Link href={`/categories/${category}/29`}>
+                            <p className="my-2 hover:bg-red-500 hover:text-white p-3">
+                              &quot;29&quot;
+                            </p>
+                          </Link>
+                        </>
+                      )
+                    )}
+                  </div>
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/service" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Documentation
+                  Сервиз
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

@@ -883,6 +883,15 @@ export default function Navbar({
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <NavigationMenuTrigger>Облекло</NavigationMenuTrigger>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Протектори</NavigationMenuTrigger>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Аксесоари</NavigationMenuTrigger>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/service" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Сервиз

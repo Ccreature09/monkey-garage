@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/themeprovider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
-const Intro = localFont({
-  src: "../assets/4488-font.otf",
-});
-
+const poppins = Poppins({ weight: "500", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Monkey Garage",
   description: "Monkey Garage Shop",
@@ -23,7 +20,7 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body className={Intro.className}>
+        <body className={poppins.className}>
           <SpeedInsights />
           <ThemeProvider
             attribute="class"

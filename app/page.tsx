@@ -1,6 +1,5 @@
 "use client";
 
-import Categories from "@/components/functional/categories";
 import Navbar from "@/components/functional/navbar";
 import Footer from "@/components/ui/footer";
 import { useState, useEffect } from "react";

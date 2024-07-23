@@ -42,107 +42,99 @@ export default function NavbarCatMobile() {
           <SheetHeader>
             <SheetTitle className="text-xl font-semibold mb-4">Menu</SheetTitle>
           </SheetHeader>
-          <SheetDescription>
+          <SheetDescription className="space-y-5">
             {/* Колела */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Колела
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Introduction</li>
-                  <li className="py-2 text-gray-600">Installation</li>
-                  <li className="py-2 text-gray-600">Typography</li>
-                  <li className="py-2 text-gray-600">shadcn/ui</li>
+                <ul className="text-white">
+                  <li className="py-2">Introduction</li>
+                  <li className="py-2">Installation</li>
+                  <li className="py-2">Typography</li>
+                  <li className="py-2">shadcn/ui</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
 
             {/* Компоненти */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Компоненти
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Скоростни системи</li>
-                  <li className="py-2 text-gray-600">Задни Дерайльори</li>
-                  <li className="py-2 text-gray-600">Предни Декланшори</li>
-                  <li className="py-2 text-gray-600">Задни Венци</li>
-                  <li className="py-2 text-gray-600">Вериги</li>
-                  <li className="py-2 text-gray-600">Команди</li>
-                  <li className="py-2 text-gray-600">
-                    Groupsets / групи компоненти
-                  </li>
-                  <li className="py-2 text-gray-600">
-                    Single Speed / Единична скорост
-                  </li>
+                <ul className="text-white">
+                  <li className="py-2">Скоростни системи</li>
+                  <li className="py-2">Задни Дерайльори</li>
+                  <li className="py-2">Предни Декланшори</li>
+                  <li className="py-2">Задни Венци</li>
+                  <li className="py-2">Вериги</li>
+                  <li className="py-2">Команди</li>
+                  <li className="py-2">Groupsets / групи компоненти</li>
+                  <li className="py-2">Single Speed / Единична скорост</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
 
             {/* Седалки и колчета */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Седалки и колчета
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Седалки</li>
-                  <li className="py-2 text-gray-600">Колчета</li>
-                  <li className="py-2 text-gray-600">Скоби</li>
-                  <li className="py-2 text-gray-600">Дропър колчета</li>
+                <ul className="text-white">
+                  <li className="py-2">Седалки</li>
+                  <li className="py-2">Колчета</li>
+                  <li className="py-2">Скоби</li>
+                  <li className="py-2">Дропър колчета</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
 
             {/* Курбели и педали */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Курбели и педали
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Педали</li>
-                  <li className="py-2 text-gray-600">Курбели</li>
-                  <li className="py-2 text-gray-600">Средни движения</li>
-                  <li className="py-2 text-gray-600">Водачи</li>
-                  <li className="py-2 text-gray-600">Плочи</li>
+                <ul className="text-white">
+                  <li className="py-2">Педали</li>
+                  <li className="py-2">Курбели</li>
+                  <li className="py-2">Средни движения</li>
+                  <li className="py-2">Водачи</li>
+                  <li className="py-2">Плочи</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
 
             {/* Кормила, лапи, грипове */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-left text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Кормила, лапи, грипове
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Кормила</li>
-                  <li className="py-2 text-gray-600">Лапи</li>
-                  <li className="py-2 text-gray-600">Грипове</li>
+                <ul className="text-white">
+                  <li className="py-2">Кормила</li>
+                  <li className="py-2">Лапи</li>
+                  <li className="py-2">Грипове</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
 
             {/* Спирачни системи */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Спирачни системи
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Хидравлични спирачки</li>
-                  <li className="py-2 text-gray-600">Ротори</li>
-                  <li className="py-2 text-gray-600">
-                    Накладки за дискови спирачки
-                  </li>
-                  <li className="py-2 text-gray-600">Преходници</li>
-                  <li className="py-2 text-gray-600">
-                    Механични дискови спирачки
-                  </li>
-                  <li className="py-2 text-gray-600">
+                <ul className="text-white">
+                  <li className="py-2">Хидравлични спирачки</li>
+                  <li className="py-2">Ротори</li>
+                  <li className="py-2">Накладки за дискови спирачки</li>
+                  <li className="py-2">Преходници</li>
+                  <li className="py-2">Механични дискови спирачки</li>
+                  <li className="py-2">
                     Лостчета за спирачки - хидравлични и Механични
                   </li>
                 </ul>
@@ -151,50 +143,50 @@ export default function NavbarCatMobile() {
 
             {/* Рамки, окачване */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Рамки, окачване
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Рамки</li>
-                  <li className="py-2 text-gray-600">Вилки</li>
-                  <li className="py-2 text-gray-600">Шокове</li>
-                  <li className="py-2 text-gray-600">Уши</li>
-                  <li className="py-2 text-gray-600">Резервни части</li>
+                <ul className="text-white">
+                  <li className="py-2">Рамки</li>
+                  <li className="py-2">Вилки</li>
+                  <li className="py-2">Шокове</li>
+                  <li className="py-2">Уши</li>
+                  <li className="py-2">Резервни части</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
 
             {/* Капли / Гуми */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Капли / Гуми
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
+                <ul className="text-white">
                   <Collapsible>
-                    <CollapsibleTrigger className="cursor-pointer text-left text-gray-800">
+                    <CollapsibleTrigger className="cursor-pointer text-left text-white">
                       Капли
                     </CollapsibleTrigger>
                     <CollapsibleContent className="ml-4">
-                      <ul>
-                        <li className="py-2 text-gray-600">26</li>
-                        <li className="py-2 text-gray-600">27.5</li>
-                        <li className="py-2 text-gray-600">28</li>
-                        <li className="py-2 text-gray-600">29</li>
+                      <ul className="text-white">
+                        <li className="py-2">26</li>
+                        <li className="py-2">27.5</li>
+                        <li className="py-2">28</li>
+                        <li className="py-2">29</li>
                       </ul>
                     </CollapsibleContent>
                   </Collapsible>
                   <Collapsible>
-                    <CollapsibleTrigger className="cursor-pointer text-left text-gray-800">
+                    <CollapsibleTrigger className="cursor-pointer text-left text-white">
                       Гуми
                     </CollapsibleTrigger>
                     <CollapsibleContent className="ml-4">
-                      <ul>
-                        <li className="py-2 text-gray-600">26</li>
-                        <li className="py-2 text-gray-600">27.5</li>
-                        <li className="py-2 text-gray-600">28</li>
-                        <li className="py-2 text-gray-600">29</li>
+                      <ul className="text-white">
+                        <li className="py-2">26</li>
+                        <li className="py-2">27.5</li>
+                        <li className="py-2">28</li>
+                        <li className="py-2">29</li>
                       </ul>
                     </CollapsibleContent>
                   </Collapsible>
@@ -204,24 +196,24 @@ export default function NavbarCatMobile() {
 
             {/* Облекло */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Облекло
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Протектори</li>
+                <ul className="text-white">
+                  <li className="py-2">Протектори</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
 
             {/* Аксесоари */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg font-medium py-2 px-4 rounded hover:bg-gray-200 transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
                 Аксесоари
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul>
-                  <li className="py-2 text-gray-600">Сервиз</li>
+                <ul className="text-white">
+                  <li className="py-2">Сервиз</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>

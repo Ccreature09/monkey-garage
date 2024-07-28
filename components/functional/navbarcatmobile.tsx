@@ -110,7 +110,7 @@ export default function NavbarCatMobile() {
 
             {/* Кормила, лапи, грипове */}
             <Collapsible>
-              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
+              <CollapsibleTrigger className="cursor-pointer text-md bg-orange-800 text-white font-medium  py-2 px-4 rounded transition-colors">
                 Кормила, лапи, грипове
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
@@ -212,9 +212,16 @@ export default function NavbarCatMobile() {
                 Аксесоари
               </CollapsibleTrigger>
               <CollapsibleContent className="ml-4">
-                <ul className="text-white">
-                  <li className="py-2">Сервиз</li>
-                </ul>
+                <ul className="text-white"></ul>
+              </CollapsibleContent>
+            </Collapsible>
+
+            <Collapsible>
+              <CollapsibleTrigger className="cursor-pointer text-lg bg-orange-800 text-white font-medium py-2 px-4 rounded transition-colors">
+                Сервиз
+              </CollapsibleTrigger>
+              <CollapsibleContent className="ml-4">
+                <ul className="text-white"></ul>
               </CollapsibleContent>
             </Collapsible>
           </SheetDescription>

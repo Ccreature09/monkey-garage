@@ -8,6 +8,7 @@ import {
   MainCarousel,
   ProductsCarousel,
 } from "@/components/functional/carousel";
+import Image from "next/image";
 
 export default function Page() {
   const [user, setUser] = useState<User | null>(null);
@@ -29,8 +30,31 @@ export default function Page() {
   return (
     <>
       <Navbar onUserChange={(user) => setUser(user)} />
-      <div className="mx-12 mb-12">
-        <MainCarousel></MainCarousel>
+      <div className="mx-4 mb-12 space-y-2">
+        <img
+          src={
+            "https://www.bike-discount.de/media/image/69/3d/60/bikesale2024_1500x500_02_en.jpg"
+          }
+          alt=""
+        ></img>
+        <img
+          src={
+            "https://www.bike-discount.de/media/image/69/3d/60/bikesale2024_1500x500_02_en.jpg"
+          }
+          alt=""
+        ></img>
+        <img
+          src={
+            "https://www.bike-discount.de/media/image/69/3d/60/bikesale2024_1500x500_02_en.jpg"
+          }
+          alt=""
+        ></img>
+        <img
+          src={
+            "https://www.bike-discount.de/media/image/69/3d/60/bikesale2024_1500x500_02_en.jpg"
+          }
+          alt=""
+        ></img>
       </div>
 
       <ProductsCarousel></ProductsCarousel>

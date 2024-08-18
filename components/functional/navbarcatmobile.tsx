@@ -17,7 +17,7 @@ export default function NavbarCatMobile() {
   return (
     <div className="my-5">
       <Sheet>
-        <SheetTrigger className="flex items-center justify-center w-full p-2 bg-gray-800 text-white rounded-lg">
+        <SheetTrigger className="flex items-center justify-center w-full p-2 text-white rounded-lg">
           <svg
             data-testid="geist-icon"
             height="16"
@@ -29,7 +29,7 @@ export default function NavbarCatMobile() {
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
-              d="M1.75 4H1V5.5H1.75H14.25H15V4H14.25H1.75ZM1.75 10.5H1V12H1.75H14.25H15V10.5H14.25H1.75Z"
+              d="M1 2H1.75H14.25H15V3.5H14.25H1.75H1V2ZM1 12.5H1.75H14.25H15V14H14.25H1.75H1V12.5ZM1.75 7.25H1V8.75H1.75H14.25H15V7.25H14.25H1.75Z"
               fill="currentColor"
             ></path>
           </svg>
